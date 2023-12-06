@@ -13,11 +13,7 @@ export const sequelize = new Sequelize(
 );
 
 export const dbConnection = () => {
-  // Synchronization:
-  //! SYNC MUST RUN ONCE!
   sequelize.sync(); // CREATE TABLE
-  // sequelize.sync({ force: true }) // DROP & CREATE
-  // sequelize.sync({ alter: true }) // TO BACKUP & DROP & CREATE & FROM BACKUP
 
   // Connect:
   sequelize
