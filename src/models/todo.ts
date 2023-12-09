@@ -4,7 +4,7 @@ import { sequelize } from "../middlewares/dbConnection";
 // sequelize.define('tableName', { columns })
 const Todo = sequelize.define("todo", {
   title: {
-    type: DataTypes.STRING(64), // varchar(64)
+    type: DataTypes.STRING(64),
     allowNull: false,
   },
 
